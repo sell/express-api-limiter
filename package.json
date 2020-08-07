@@ -1,11 +1,8 @@
 {
   "name": "express-api-limit",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "middlewear to limit a route to one ip",
   "main": "index.js",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
