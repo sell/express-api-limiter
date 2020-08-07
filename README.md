@@ -11,9 +11,10 @@ Then...
 
 ```
 const iplimiter = require('express-ip-limiter')
-const ip = iplimiter.iplimiter
+const ip = iplimiter.iplimiter({
+    ipAddress: '::1' // enter ip you want to limit it to
 
-app.post('/important', ip('1234'), (req, res, next) => {
+app.post('/important', ip, (req, res, next) => {
     res.json({
         message: 'success'
     )}
@@ -22,5 +23,5 @@ app.post('/important', ip('1234'), (req, res, next) => {
 
 ## Options
 
-* `ip('<enter an ip>')`
+* `ipAddress`
 
